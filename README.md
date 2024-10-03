@@ -1,7 +1,6 @@
 María Daniela Rodríguez Chacón
-CC 1126911848
 
-# Proyecto-sustituto
+# Proyecto-
 
 Este proyecto busca completar la formación del curso Introducción a la IA llevando un modelo predictivo a un estado listo para que sea integrado en sistema de producción. El proyecto se divide en tres fases:
 
