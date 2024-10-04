@@ -1,8 +1,6 @@
 María Daniela Rodríguez Chacón
 
-# Proyecto-
-
-Este proyecto busca completar la formación del curso Introducción a la IA llevando un modelo predictivo a un estado listo para que sea integrado en sistema de producción. El proyecto se divide en tres fases:
+# Modelo AI en producción
 
 - **Fase 1**:
     - Se escoge una competencia de Kaggle relacionada con transporte personal. Para este proyecto, se escogió la competición **Bike Sharing Demand**, donde se pide a los participantes que combinen patrones de uso históricos con datos meteorológicos para pronosticar la demanda de alquiler de bicicletas en el programa Capital Bikeshare en Washington, D.C.
