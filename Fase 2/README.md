@@ -7,7 +7,7 @@
     - Se añade el script `02 - run scripts.py` para cargar los archivos generados en los scripts `train.py` y `predict.py`.
         **Nota:** estos dos scripts se añaden para hacer pruebas con los los scripts `train.py` y `predict.py`.
       
-    - Se añade `train.py` a la carpeta `scripts` para entrenar un nuevo modelo y guardarlo.
+    - Se añade `train.py` a la carpeta `scripts` para entrenar un nuevo modelo de regresión lineal y guardarlo.
       - Para ejecutar este script, se debe cargar en el entorno el archivo "train.csv" de la carpeta "Fase 1" de este proyecto.
       - Este script genera un archivo llamado `modelo_entrenado.pkl`.
     - Se añade `predict.py` a la carpeta `scripts` para generar una predicción para cada dato de entrada.
