@@ -12,7 +12,7 @@
     - Se añade `start.sh` a la carpeta `scripts` para ejecutar el script `train.py` o `predict.py` dependiendo del caso.
 
 
-# ¿Cómo ejecutar?
+## ¿Cómo ejecutar?
   
 - **Fase 2. Configuración de un contenedor de Docker**
 -  Antes de iniciar, asegúrate de tener Docker instalado correctamente un tu computador. (página para descarga: https://docs.docker.com/get-docker/)
@@ -22,7 +22,8 @@
     - Para entrenar el modelo, ejecuta el comando `docker run -it --rm mi-modelo train`.
     - Luego, para las predicciones ejecuta el comando `docker run -it --rm mi-modelo predict`.
 
-# Pruebas con los scripts `01 - generate data and model.py` y `02 - run scripts.py`
+## Pruebas con los scripts `01 - generate data and model.py` y `02 - run scripts.py`.
+
     - Corre el script `train.py` para entrenar un modelo de regresión lineal basado en el "train.csv" del modelo inicial.
     - Abre el script `predict.py`.
     - Carga el archivo `modelo_entrenado.pkl` para generar predicciones usando el modelo pre-entrenado generado en el punto anterior.
