@@ -8,7 +8,10 @@
         **Nota:** estos dos scripts se añaden para hacer pruebas con los los scripts `train.py` y `predict.py`.
       
     - Se añade `train.py` a la carpeta `scripts` para entrenar un nuevo modelo y guardarlo.
-    - Se añade `predict.py` a la carpeta `scripts` para generar una predicción para cada dato de entrada, usando un modelo previamente creado en el script `train.py`.
+      - Para ejecutar este script, se debe cargar en el entorno el archivo "train.csv" de la carpeta "Fase 1" de este proyecto.
+      - Este script genera un archivo llamado `modelo_entrenado.pkl`.
+    - Se añade `predict.py` a la carpeta `scripts` para generar una predicción para cada dato de entrada.
+      - Para ejecutar este script, se debe cargar en el entorno el archivo `modelo_entrenado.pkl` generado en el punto anterior y también el archivo "train.csv" de la carpeta "Fase 1" de este proyecto.
     - Se añade `start.sh` a la carpeta `scripts` para ejecutar el script `train.py` o `predict.py` dependiendo del caso.
 
 
