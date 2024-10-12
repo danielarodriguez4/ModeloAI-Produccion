@@ -31,6 +31,7 @@ María Daniela Rodríguez Chacón
   │   ├── scripts
   │       ├── train.py
   │       ├── predict.py
+  │       ├── fase_1.py
   │       ├── start.sh
   │   ├── Dockerfile
   │   ├── requirements.txt
