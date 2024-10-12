@@ -15,12 +15,12 @@ María Daniela Rodríguez Chacón
     - Se añade el script `02 - run scripts.py` para cargar los archivos generados en los scripts `train.py` y `predict.py`.
 
 
-# ¿Cómo ejecutar?
+## ¿Cómo ejecutar?
 
   Para detalles sobre cómo ejecutar cada fase, revisar el README.md de cada carpeta. 
 
 ## Estructura del proyecto
-
+```bash
   ModeloAI-Produccion/
   ├── Fase 1
   │   ├── fase_1.pynb
@@ -40,3 +40,6 @@ María Daniela Rodríguez Chacón
   ├── Fase 3
   │   ├── .py
   ├── README.md
+```
+
+
