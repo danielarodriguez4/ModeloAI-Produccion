@@ -18,7 +18,7 @@ data_file = args.data_file
 overwrite = args.overwrite_model
 
 # Cargar datos de entrenamiento
-data = pd.read_csv(data_file)
+data = pd.read_csv('train.csv')
 
 # Convertir las fechas a Unix timestamp
 data['datetime'] = pd.to_datetime(data['datetime'])
