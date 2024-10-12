@@ -1,16 +1,21 @@
-# Usar una imagen base de Python 3
+# Utiliza una imagen base de Python
 FROM python:3.9-slim-buster
 
-# Establecer el directorio de trabajo dentro del contenedor
+# Establece el directorio de trabajo dentro del contenedor
 WORKDIR /app
 
-# Copiar los archivos necesarios al contenedor
-COPY requirements.txt
-COPY train.py train.py
-COPY predict.py predict.py
+# Copia los archivos necesarios
+COPY requirements.txt ./
+COPY train.py ./
+COPY predict.py ./
+COPY fase_1.py ./
+COPY start.sh ./
 
-# Instalar las dependencias desde requirements.txt
-RUN pip install -r requirements.txt
+# Instala las dependencias
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Comando por defecto para ejecutar el script de entrenamiento o predicción
-CMD ["bash", "start.sh"]
+# Establece los permisos de ejecución para el script de inicio
+RUN chmod +x start.sh
+
+# Comando por defecto al ejecutar el contenedor
+CMD ["/bin/bash", "start.sh"]
