@@ -18,3 +18,25 @@ María Daniela Rodríguez Chacón
 # ¿Cómo ejecutar?
 
   Para detalles sobre cómo ejecutar cada fase, revisar el README.md de cada carpeta. 
+
+## Estructura del proyecto
+
+  ModeloAI-Produccion/
+  ├── Fase 1
+  │   ├── fase_1.pynb
+  │   ├── train.csv
+  │   ├── test.csv
+  │   ├── README.md
+  ├── Fase 2
+  │   ├── scripts
+  │       ├── train.py
+  │       ├── predict.py
+  │       ├── start.sh
+  │   ├── Dockerfile
+  │   ├── requirements.txt
+  │   ├── 01_generate_data_and_model.py
+  │   ├── 02_run_scripts.py
+  │   ├── README.md
+  ├── Fase 3
+  │   ├── .py
+  ├── README.md
