@@ -5,10 +5,12 @@
     - Se configura un contenedor Docker para 
     - Se añade el script `01 - generate data and model.py` para generar datos sintéticos.
     - Se añade el script `02 - run scripts.py` para cargar los archivos generados en los scripts `train.py` y `predict.py`.
+        **Nota:** estos dos scripts se añaden para hacer pruebas con los los scripts `train.py` y `predict.py`.
+      
     - Se añade `train.py` a la carpeta `scripts` para entrenar un nuevo modelo y guardarlo.
     - Se añade `predict.py` a la carpeta `scripts` para generar una predicción para cada dato de entrada, usando un modelo previamente creado en el script `train.py`.
     - Se añade `start.sh` a la carpeta `scripts` para ejecutar el script `train.py` o `predict.py` dependiendo del caso.
- **Nota:** estos dos scripts se añaden para hacer pruebas con los los scripts `train.py` y `predict.py`.
+
 
 # ¿Cómo ejecutar?
   
