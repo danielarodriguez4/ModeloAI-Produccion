@@ -23,9 +23,8 @@
     - Luego, para las predicciones ejecuta el comando `docker run -it --rm mi-modelo predict`.
 
 ## Pruebas con los scripts `01 - generate data and model.py` y `02 - run scripts.py`.
-
-    - Corre el script `train.py` para entrenar un modelo de regresión lineal basado en el "train.csv" del modelo inicial.
-    - Abre el script `predict.py`.
-    - Carga el archivo `modelo_entrenado.pkl` para generar predicciones usando el modelo pre-entrenado generado en el punto anterior.
-    - Una vez generadas las predicciones, cárgalas en `01 - generate data and model.py` y corre el código.
-    - Carga el archivo `predicciones.csv`, `test_new_data.csv` y train_new_data.csv` en el `02 - run scripts.py` y corre el código para obtener el nuevo modelo entrenado.
+- Corre el script `train.py` para entrenar un modelo de regresión lineal basado en el "train.csv" del modelo inicial.
+- Abre el script `predict.py`.
+- Carga el archivo `modelo_entrenado.pkl` para generar predicciones usando el modelo pre-entrenado generado en el punto anterior.
+- Una vez generadas las predicciones, cárgalas en `01 - generate data and model.py` y corre el código.
+- Carga el archivo `predicciones.csv`, `test_new_data.csv` y train_new_data.csv` en el `02 - run scripts.py` y corre el código para obtener el nuevo modelo entrenado.
