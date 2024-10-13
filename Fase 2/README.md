@@ -44,7 +44,7 @@
      ``` bash
        docker run -it --name contenedor modelo-produccion
      ```
- **4. Ejecuta el siguiente comando dentro de la terminal del contenedor para escoger el script que desees correr:**
+**4. Ejecuta el siguiente comando dentro de la terminal del contenedor para escoger el script que desees correr:**
      ``` bash
        ./start.sh
      ```
