@@ -17,8 +17,11 @@
 
 ## ¿Cómo ejecutar?
   
-**Fase 2. Configuración de un contenedor de Docker**
-   Antes de iniciar, asegúrate de tener Docker instalado correctamente un tu computador. (página para descarga: https://docs.docker.com/get-docker/)
+**Prerrequisitos para seguir la guía**
+- Asegúrate de tener Docker instalado correctamente un tu computador. (página para descarga: https://docs.docker.com/get-docker/).
+- Este instructivo funciona en Windows.
+- La versión de Python usada es 3.10, corresponde a la versión de Google Colab.
+- Git para clonar el repositorio.
   
 **1. Clona el repositorio:**
  - Abre tu terminal o lìnea de comandos.
@@ -33,21 +36,21 @@
     ``` bash
       cd Fase 2
     ```
-**2. Ejecuta los siguientes comandos para crear la imagen de Docker y correr los scripts:**
-- Para crear la imagen:
+**2. Ejecuta el siguiente comando para crear la imagen de Docker:**
      ``` bash
        docker build -t modelo-produccion .
      ```
-- Para ejecutar el script de entrenamiento: 
+**3. Ejecuta el siguiente comando para crear y ejecutar el contenedor:**
      ``` bash
-       docker run -it modelo-produccion train
+       docker run -it --name contenedor modelo-produccion
      ```
-- Para ejecutar el script de predicciones:
+ **4. Ejecuta el siguiente comando dentro de la terminal del contenedor para escoger el script que desees correr:**
      ``` bash
-       docker run -it modelo-produccion predict
+       ./start.sh
      ```
+ - **Nota:** primero debes ejecutar el `train.py` y luego el `predict.py`, ya que predict depende de los resultados de train.
 
- **3. Ejecuta el siguiente comando para parar el contenedor cuando desees detenerlo:**
+ **3. Ejecuta el siguiente comando para parar el contenedor:**
  ``` bash
    docker stop modelo-produccion
  ```
