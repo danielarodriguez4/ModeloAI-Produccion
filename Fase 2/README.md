@@ -2,7 +2,7 @@
 # Descripción  
 
  - **Fase 2**:
-    - Se configura un contenedor Docker para 
+    - Se configura un contenedor Docker.
     - Se añade el script `01 - generate data and model.py` para generar datos sintéticos.
     - Se añade el script `02 - run scripts.py` para cargar los archivos generados en los scripts `train.py` y `predict.py`.
         **Nota:** estos dos scripts se añaden para hacer pruebas con los los scripts `train.py` y `predict.py`.
