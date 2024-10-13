@@ -17,21 +17,22 @@
 
 ## ¿Cómo ejecutar?
   
-- **Fase 2. Configuración de un contenedor de Docker**
+**Fase 2. Configuración de un contenedor de Docker**
    Antes de iniciar, asegúrate de tener Docker instalado correctamente un tu computador. (página para descarga: https://docs.docker.com/get-docker/)
- **1. Clona el repositorio:**
-  - Abre tu terminal o lìnea de comandos.
-  - Navega hasta alguna carpeta donde quieras clonar el repositorio. Puedes usar el comando "cd" para hacerlo.
-  - Ejecuta los siguientes comandos:
-     ``` bash
-       git clone https://github.com/danielarodriguez4/ModeloAI-Produccion.git
-     ```
-     ``` bash
-       cd "carpeta-donde-clonaste-el-repositorio"/ModeloAI-Produccion
-     ```
-     ``` bash
-       cd Fase 2
-     ```
+  
+**1. Clona el repositorio:**
+ - Abre tu terminal o lìnea de comandos.
+ - Navega hasta alguna carpeta donde quieras clonar el repositorio. Puedes usar el comando "cd" para hacerlo.
+ - Ejecuta los siguientes comandos:
+    ``` bash
+      git clone https://github.com/danielarodriguez4/ModeloAI-Produccion.git
+    ```
+    ``` bash
+      cd "carpeta-donde-clonaste-el-repositorio"/ModeloAI-Produccion
+    ```
+    ``` bash
+      cd Fase 2
+    ```
 **2. Ejecuta los siguientes comandos para crear la imagen de Docker y correr los scripts:**
 - Para crear la imagen:
      ``` bash
