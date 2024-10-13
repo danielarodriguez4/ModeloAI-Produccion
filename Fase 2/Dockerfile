@@ -1,17 +1,17 @@
 # Utiliza una imagen base de Python
-FROM python:3.9-slim-buster
+FROM python:3.10-slim-buster
 
-# Establece el directorio de trabajo dentro del contenedor
+# Establece el directorio de trabajo dentro del contenedor como /app. Todos los comandos posteriores se ejecutarán dentro de este directorio.
 WORKDIR /app
 
-# Copia todos los archivos que se encuentren al mismo nivel del repositorio que el Dockerfile
+# Copia todos los archivos y subdirectorios del directorio actual (donde se encuentra el Dockerfile) al directorio de trabajo dentro del contenedor. 
 COPY . .
 
-# Instala las dependencias
+# Instala las dependencias descritas en el archivo requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Establece los permisos de ejecución para el script de inicio
 RUN chmod +x start.sh
 
-# Comando por defecto al ejecutar el contenedor
+# Establece el comando por defecto que se ejecutará cuando se inicie un contenedor a partir de esta imagen. En este caso, se ejecutará el script Bash /bin/bash y se le pasará como argumento el script start.sh.
 CMD ["/bin/bash", "start.sh"]
