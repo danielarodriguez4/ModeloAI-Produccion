@@ -40,17 +40,19 @@
      ``` bash
        docker build -t modelo-produccion .
      ```
+     
 **3. Ejecuta el siguiente comando para crear y ejecutar el contenedor:**
      ``` bash
        docker run -it --name contenedor modelo-produccion
      ```
+
 **4. Ejecuta el siguiente comando dentro de la terminal del contenedor para escoger el script que desees correr:**
      ``` bash
        ./start.sh
      ```
  - **Nota:** primero debes ejecutar el `train.py` y luego el `predict.py`, ya que predict depende de los resultados de train.
 
- **3. Ejecuta el siguiente comando para parar el contenedor:**
+ **5. Ejecuta el siguiente comando para parar el contenedor:**
  ``` bash
    docker stop modelo-produccion
  ```
