@@ -35,15 +35,15 @@
 **2. Construye la imagen de Docker:**
    2.1. Ejecuta los siguientes comandos en la terminal:
      ``` bash
-        docker build -t modelo-produccion .
+       docker build -t modelo-produccion .
      ```
   2.2. Para ejecutar el script de entrenamiento: 
      ``` bash
-        docker run -it --rm modelo-produccion train
+       docker run -it --rm modelo-produccion train
      ```
   2.3. Para ejecutar el script de predicciones:
      ``` bash
-        docker run -it --rm modelo-produccion predict
+       docker run -it --rm modelo-produccion predict
      ```
   
 ## Pruebas con los scripts `01 - generate data and model.py` y `02 - run scripts.py`.
