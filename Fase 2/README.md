@@ -32,8 +32,8 @@
      ``` bash
        cd Fase 2
      ```
-**2. Construye la imagen de Docker:**
-- Ejecuta los siguientes comandos en la terminal:
+**2. Ejecuta los siguientes comandos para crear la imagen de Docker:**
+- Para crear la imagen:
      ``` bash
        docker build -t modelo-produccion .
      ```
