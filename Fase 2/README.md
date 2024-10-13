@@ -18,13 +18,34 @@
 ## ¿Cómo ejecutar?
   
 - **Fase 2. Configuración de un contenedor de Docker**
--  Antes de iniciar, asegúrate de tener Docker instalado correctamente un tu computador. (página para descarga: https://docs.docker.com/get-docker/)
-    - Descargar el contenido del archivo `Dockerfile` y los tres archivos dentro de la carpeta `scripts`.
-    - Abrir la terminal y navegar hasta el directorio donde quedó guardado el `Dockerfile`. Puedes navegar utilizando el comando `cd`. 
-    - Ejecutar el comando `docker build -t modelo-ia .` en la terminal para construir la imagen. Puedes sustituir "modelo-ia" por el nombre que prefieras para la imagen.
-    - Para entrenar el modelo, ejecuta el comando `docker run -it --rm mi-modelo train`.
-    - Luego, para las predicciones ejecuta el comando `docker run -it --rm mi-modelo predict`.
-
+   Antes de iniciar, asegúrate de tener Docker instalado correctamente un tu computador. (página para descarga: https://docs.docker.com/get-docker/)
+ **1. Clona el repositorio:**
+     1.1. Abre tu terminal o lìnea de comandos.
+     1.2. Navega hasta alguna carpeta donde quieras clonar el repositorio. Puedes usar el comando "cd" para hacerlo.
+     1.3. Ejecuta los siguientes comandos:
+     ``` bash
+git clone https://github.com/danielarodriguez4/ModeloAI-Produccion.git
+     ```
+     ``` bash
+cd "carpeta-donde-clonaste-el-repositorio"/ModeloAI-Produccion
+     ```
+     ``` bash
+cd Fase 2
+     ```
+**2. Construye la imagen de Docker:**
+   2.1. Ejecuta los siguientes comandos en la terminal:
+ ``` bash
+   docker build -t modelo-produccion .
+ ```
+  2.2. Para ejecutar el script de entrenamiento: 
+ ``` bash
+  docker run -it --rm modelo-produccion train
+ ```
+  2.3. Para ejecutar el script de predicciones:
+ ``` bash
+  docker run -it --rm modelo-produccion predict
+ ```
+  
 ## Pruebas con los scripts `01 - generate data and model.py` y `02 - run scripts.py`.
 - Corre el script `train.py` para entrenar un modelo de regresión lineal basado en el "train.csv" del modelo inicial.
 - Abre el script `predict.py`.
