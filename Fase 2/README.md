@@ -39,11 +39,11 @@
      ```
 - Para ejecutar el script de entrenamiento: 
      ``` bash
-       docker run -it --rm modelo-produccion train
+       docker run -it modelo-produccion train
      ```
 - Para ejecutar el script de predicciones:
      ``` bash
-       docker run -it --rm modelo-produccion predict
+       docker run -it modelo-produccion predict
      ```
 
  **3. Ejecuta el siguiente comando para parar el contenedor cuando desees detenerlo:**
