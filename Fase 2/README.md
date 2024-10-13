@@ -24,27 +24,27 @@
      1.2. Navega hasta alguna carpeta donde quieras clonar el repositorio. Puedes usar el comando "cd" para hacerlo.
      1.3. Ejecuta los siguientes comandos:
      ``` bash
-git clone https://github.com/danielarodriguez4/ModeloAI-Produccion.git
+       git clone https://github.com/danielarodriguez4/ModeloAI-Produccion.git
      ```
      ``` bash
-cd "carpeta-donde-clonaste-el-repositorio"/ModeloAI-Produccion
+       cd "carpeta-donde-clonaste-el-repositorio"/ModeloAI-Produccion
      ```
      ``` bash
-cd Fase 2
+       cd Fase 2
      ```
 **2. Construye la imagen de Docker:**
    2.1. Ejecuta los siguientes comandos en la terminal:
- ``` bash
-   docker build -t modelo-produccion .
- ```
+     ``` bash
+        docker build -t modelo-produccion .
+     ```
   2.2. Para ejecutar el script de entrenamiento: 
- ``` bash
-  docker run -it --rm modelo-produccion train
- ```
+     ``` bash
+        docker run -it --rm modelo-produccion train
+     ```
   2.3. Para ejecutar el script de predicciones:
- ``` bash
-  docker run -it --rm modelo-produccion predict
- ```
+     ``` bash
+        docker run -it --rm modelo-produccion predict
+     ```
   
 ## Pruebas con los scripts `01 - generate data and model.py` y `02 - run scripts.py`.
 - Corre el script `train.py` para entrenar un modelo de regresión lineal basado en el "train.csv" del modelo inicial.
