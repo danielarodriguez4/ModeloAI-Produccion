@@ -20,9 +20,9 @@
 - **Fase 2. Configuración de un contenedor de Docker**
    Antes de iniciar, asegúrate de tener Docker instalado correctamente un tu computador. (página para descarga: https://docs.docker.com/get-docker/)
  **1. Clona el repositorio:**
-     1.1. Abre tu terminal o lìnea de comandos.
-     1.2. Navega hasta alguna carpeta donde quieras clonar el repositorio. Puedes usar el comando "cd" para hacerlo.
-     1.3. Ejecuta los siguientes comandos:
+  - Abre tu terminal o lìnea de comandos.
+  - Navega hasta alguna carpeta donde quieras clonar el repositorio. Puedes usar el comando "cd" para hacerlo.
+  - Ejecuta los siguientes comandos:
      ``` bash
        git clone https://github.com/danielarodriguez4/ModeloAI-Produccion.git
      ```
@@ -33,15 +33,15 @@
        cd Fase 2
      ```
 **2. Construye la imagen de Docker:**
-   2.1. Ejecuta los siguientes comandos en la terminal:
+- Ejecuta los siguientes comandos en la terminal:
      ``` bash
        docker build -t modelo-produccion .
      ```
-  2.2. Para ejecutar el script de entrenamiento: 
+- Para ejecutar el script de entrenamiento: 
      ``` bash
        docker run -it --rm modelo-produccion train
      ```
-  2.3. Para ejecutar el script de predicciones:
+- Para ejecutar el script de predicciones:
      ``` bash
        docker run -it --rm modelo-produccion predict
      ```
