@@ -32,7 +32,7 @@
      ``` bash
        cd Fase 2
      ```
-**2. Ejecuta los siguientes comandos para crear la imagen de Docker:**
+**2. Ejecuta los siguientes comandos para crear la imagen de Docker y correr los scripts:**
 - Para crear la imagen:
      ``` bash
        docker build -t modelo-produccion .
@@ -45,7 +45,12 @@
      ``` bash
        docker run -it --rm modelo-produccion predict
      ```
-  
+
+ **3. Ejecuta el siguiente comando para parar el contenedor cuando desees detenerlo:**
+ ``` bash
+   docker stop modelo-produccion
+ ```
+
 ## Pruebas con los scripts `01 - generate data and model.py` y `02 - run scripts.py`.
 - Corre el script `train.py` para entrenar un modelo de regresión lineal basado en el "train.csv" del modelo inicial.
 - Abre el script `predict.py`.
