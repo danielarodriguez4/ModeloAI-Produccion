@@ -32,6 +32,7 @@ María Daniela Rodríguez Chacón
   │       ├── train.py
   │       ├── predict.py
   │       ├── start.sh
+  │       ├── train.csv
   │   ├── Dockerfile
   │   ├── requirements.txt
   │   ├── 01_generate_data_and_model.py
