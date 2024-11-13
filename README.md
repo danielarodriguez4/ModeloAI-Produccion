@@ -14,6 +14,11 @@ María Daniela Rodríguez Chacón
     - Se añade el script `01 - generate data and model.py` para generar datos sintéticos.
     - Se añade el script `02 - run scripts.py` para cargar los archivos generados en los scripts `train.py` y `predict.py`.
 
+ - **Fase 3**:
+    - Se configura un nuevo contenedor de Docker.
+    - Se agrega el script `apirest.py`. Este script implementa una API REST usando Flask para exponer dos funcionalidades principales: entrenamiento de un modelo y generación de predicciones.
+    - Se agrega el script `client.py`. Este script actúa como un cliente que interactúa con la API REST desplegada por apirest.py.
+
 
 ## ¿Cómo ejecutar?
 
@@ -39,8 +44,15 @@ María Daniela Rodríguez Chacón
   │   ├── 02_run_scripts.py
   │   ├── README.md
   ├── Fase 3
-  │   ├── .py
-  ├── README.md
+  │   ├── scripts
+  │       ├── train.py
+  │       ├── predict.py
+  │       ├── start.sh
+  │       ├── client.py
+  │       ├── apirest.py
+  │   ├── Dockerfile
+  │   ├── requirements.txt
+  │   ├── README.md
 ```
 
 
