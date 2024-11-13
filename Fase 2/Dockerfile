@@ -13,5 +13,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Otorga permisos de ejecución a start.sh
 RUN chmod +x start.sh
 
-# Comando por defecto para iniciar el contenedor
-CMD ["/bin/bash", "start.sh"]
+# Comando por defecto para iniciar la API REST
+CMD ["/bin/bash", "start.sh", "api"]
