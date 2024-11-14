@@ -9,13 +9,13 @@
 
 Los archivos `input_data.csv` y `train.csv` se utiliza en diferentes scripts para entrenar el modelo y realizar predicciones, es importante que tus archivos de entrada tengan estos nombres o que actualices los scripts donde se usan:
 
-**Archivo `train.csv`**
-Este archivo contiene los datos de entrenamiento para el modelo y aparece en el script `train.py`:
+- **Archivo `train.csv`**
+    - Este archivo contiene los datos de entrenamiento para el modelo y aparece en el script `train.py`:
     ``` bash
       data = pd.read_csv('train.csv')  # Carga train.csv
     ```
-**Archivo `input_data.csv`**
-Este archivo contiene datos de entrada para hacer predicciones y aparece en el script `predict.py`:
+- **Archivo `input_data.csv`**
+    - Este archivo contiene datos de entrada para hacer predicciones y aparece en el script `predict.py`:
     ``` bash
     sys.argv = ['predict.py', '--data_file', 'input_data.csv', '--model_file', 'modelo_entrenado.pkl']
     ```
