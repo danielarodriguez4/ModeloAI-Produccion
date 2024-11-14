@@ -5,7 +5,7 @@
 - Se agrega el script `apirest.py`. Este script implementa una API REST usando Flask para exponer dos funcionalidades principales: entrenamiento de un modelo y generación de predicciones.
 - Se agrega el script `client.py`. Este script actúa como un cliente que interactúa con la API REST desplegada por apirest.py.
 
-# Consideraciones
+## Consideraciones
 
 Los archivos `input_data.csv` y `train.csv` se utiliza en diferentes scripts para entrenar el modelo y realizar predicciones, es importante que tus archivos de entrada tengan estos nombres o que actualices los scripts donde se usan:
 
@@ -65,3 +65,7 @@ Este archivo contiene datos de entrada para hacer predicciones y aparece en el s
  ``` bash
    docker stop flask-api .
  ```
+---------------------------------------------------------------------------------------------------
+**Notas:**
+- Modelo Entrenado: Se guardará como `modelo_entrenado.pkl`.
+- Predicciones: Se guardarán en `predicciones.csv` y se mostrarán en las respuestas de la API.
